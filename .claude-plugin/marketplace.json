@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "kentra-agentic-plugins",
+  "version": "0.1.0",
+  "description": "Kentra's branded catalog of agentic coding primitives, distributed as Claude Code plugins. The primitives themselves stay neutral (own repos, MIT); this catalog is the branded distribution layer — the distribution-axis sibling of the kentra-sdlc methodology umbrella.",
+  "owner": {
+    "name": "kentra"
+  },
+  "plugins": [
+    {
+      "name": "adr-sourced-constitution",
+      "source": { "source": "github", "repo": "kentra-io/adr-sourced-constitution" },
+      "description": "Event-sourced ADR log → deterministic constitution.md projection. Skills: adr-draft, plan-gate, constitution-init, constitution-gov.",
+      "license": "MIT",
+      "category": "sdlc",
+      "keywords": ["adr", "governance", "constitution", "sdd", "spec-driven"]
+    }
+  ]
+}
