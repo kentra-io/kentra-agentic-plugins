@@ -26,8 +26,13 @@ one-line change here rather than a new marketplace registration on every machine
 Because the host `~/.claude` is shared into every claudebox container, a user-scope
 registration propagates everywhere automatically.
 
-Installed skills are namespaced by plugin, e.g. `adr-sourced-constitution:adr-draft`,
-`adr-sourced-constitution:plan-gate`.
+Each plugin ships only its **bootstrap** skill (namespaced, e.g.
+`adr-sourced-constitution:constitution-init`) — the one you need *before* a repo
+adopts the primitive. A primitive's **ongoing** skills (governance, drafting, gates)
+are not bundled here: `constitution init` installs them into the governed repo
+itself, so they travel with that repo to collaborators without requiring the plugin.
+This keeps the plugin set and each governed repo's committed skills disjoint — no
+duplication.
 
 ### Local development
 

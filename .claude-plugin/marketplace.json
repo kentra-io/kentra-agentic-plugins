@@ -10,7 +10,8 @@
     {
       "name": "adr-sourced-constitution",
       "source": { "source": "github", "repo": "kentra-io/adr-sourced-constitution" },
-      "description": "Event-sourced ADR log → deterministic constitution.md projection. Skills: adr-draft, plan-gate, constitution-init, constitution-gov.",
+      "skills": ["./skills/constitution-init"],
+      "description": "Bootstrap skill (constitution-init) for the adr-sourced-constitution primitive: interviews and scaffolds a project's constitution (event-sourced ADR log → deterministic constitution.md). Ongoing-governance skills are installed into the governed repo by `constitution init`, not bundled here.",
       "license": "MIT",
       "category": "sdlc",
       "keywords": ["adr", "governance", "constitution", "sdd", "spec-driven"]
