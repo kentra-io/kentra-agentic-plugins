@@ -15,6 +15,15 @@
       "license": "MIT",
       "category": "sdlc",
       "keywords": ["adr", "governance", "constitution", "sdd", "spec-driven"]
+    },
+    {
+      "name": "kentra-skills",
+      "source": { "source": "github", "repo": "kentra-io/kentra-skills" },
+      "skills": ["./skills/java-hexagonal", "./skills/spring-boot-hexagonal"],
+      "description": "JVM architecture skills: hexagonal (ports-and-adapters) layering, ArchUnit shape enforcement, and a three-tier test strategy (unit / domain-with-fakes / Testcontainers). Ships java-hexagonal (framework-neutral) and spring-boot-hexagonal (Spring Boot).",
+      "license": "MIT",
+      "category": "architecture",
+      "keywords": ["hexagonal", "ports-and-adapters", "archunit", "testcontainers", "jvm"]
     }
   ]
 }
