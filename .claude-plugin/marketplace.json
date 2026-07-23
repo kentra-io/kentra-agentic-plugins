@@ -17,6 +17,15 @@
       "keywords": ["adr", "governance", "constitution", "sdd", "spec-driven"]
     },
     {
+      "name": "agent-orchestration-skills",
+      "source": { "source": "github", "repo": "kentra-io/agent-orchestration" },
+      "skills": ["./skills/orchestration-launch", "./skills/orchestration-monitor"],
+      "description": "Operator and consumer skills for the agent-orchestration module: launch/resume execute-change runs through the orchestrator daemon (orchestration-launch) and monitor live runs — status fold, classified death causes, dashboard/index surfaces (orchestration-monitor).",
+      "license": "MIT",
+      "category": "sdlc",
+      "keywords": ["orchestration", "conductor", "claudebox", "observability", "agentic"]
+    },
+    {
       "name": "kentra-skills",
       "source": { "source": "github", "repo": "kentra-io/kentra-skills" },
       "skills": ["./skills/java-hexagonal", "./skills/subagent-workflow"],
