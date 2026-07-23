@@ -17,6 +17,15 @@
       "keywords": ["adr", "governance", "constitution", "sdd", "spec-driven"]
     },
     {
+      "name": "spec-lifecycle",
+      "source": { "source": "github", "repo": "kentra-io/spec-lifecycle" },
+      "skills": ["./skills/lifecycle-init"],
+      "description": "Bootstrap skill (lifecycle-init) for the spec-lifecycle primitive: installs the CLI and scaffolds a project for the staged, human-gated, spec-driven issue lifecycle (refine → design → plan → archive, OpenSpec on-disk format). Per-stage skills are installed into the governed repo by `lifecycle init`, not bundled here.",
+      "license": "MIT",
+      "category": "sdlc",
+      "keywords": ["sdd", "spec-driven", "openspec", "lifecycle", "gates", "planning"]
+    },
+    {
       "name": "agent-orchestration-skills",
       "source": { "source": "github", "repo": "kentra-io/agent-orchestration" },
       "skills": ["./skills/orchestration-launch", "./skills/orchestration-monitor"],
