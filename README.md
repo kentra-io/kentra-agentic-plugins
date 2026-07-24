@@ -47,5 +47,7 @@ before pushing, register its working tree directly instead:
 
 | Plugin | Status |
 | --- | --- |
-| `adr-sourced-constitution` | Manifest scaffolded on branch `plugin/claude-code-manifest`; installs once that branch is merged + pushed to `main`. |
-| `spec-lifecycle` | Pending — add once its skills land. |
+| `adr-sourced-constitution` | Live (v0.2) — bootstrap skill `constitution-init` scaffolds a project's event-sourced ADR log → deterministic `constitution.md`. |
+| `spec-lifecycle` | Live (v0.1) — bootstrap skill `lifecycle-init` installs the staged, human-gated spec-driven issue lifecycle (refine → design → plan → archive). |
+| `agent-orchestration-skills` | Live — `orchestration-launch` / `orchestration-monitor` skills to launch, resume, and monitor execute-change runs through the orchestrator daemon. |
+| `kentra-skills` | Live — `java-hexagonal` (framework-neutral hexagonal JVM architecture) and `subagent-workflow` (orchestrator/implementer/verifier subagent loop). |
