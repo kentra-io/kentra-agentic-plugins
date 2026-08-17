@@ -48,6 +48,17 @@ before pushing, register its working tree directly instead:
 | Plugin | Status |
 | --- | --- |
 | `adr-sourced-constitution` | Live (v0.2) — bootstrap skill `constitution-init` scaffolds a project's event-sourced ADR log → deterministic `constitution.md`. |
-| `spec-lifecycle` | Live (v0.1) — bootstrap skill `lifecycle-init` installs the staged, human-gated spec-driven issue lifecycle (refine → design → plan → archive). |
+| `spec-lifecycle` | Live (v0.2) — bootstrap skill `lifecycle-init` installs the staged, human-gated spec-driven issue lifecycle (refine → design → plan → archive). |
 | `agent-orchestration-skills` | Live — `orchestration-launch` / `orchestration-monitor` skills to launch, resume, and monitor execute-change runs through the orchestrator daemon. |
-| `kentra-skills` | Live — `java-hexagonal` (framework-neutral hexagonal JVM architecture) and `subagent-workflow` (orchestrator/implementer/verifier subagent loop). |
+| `milestoned-plan-dag` | Live (v0.1) — authoring skill `plan-author` for the machine-first YAML plan format (a DAG of verifiable milestones). |
+| `kentra-skills` | Live — `java-hexagonal` (framework-neutral hexagonal JVM architecture), `testcontainers-java` (portable Testcontainers-Java patterns), and `subagent-workflow` (orchestrator/implementer/verifier subagent loop). |
+
+### Companion CLIs
+
+Three plugins are the agent-facing half of a primitive whose other half is a CLI. Install
+those from the tap — `lifecycle` **shells out to `milestoned-plan-dag`** for its plan-stage
+and archive gates, so those two go together:
+
+```
+brew install kentra-io/tap/lifecycle kentra-io/tap/milestoned-plan-dag kentra-io/tap/constitution
+```

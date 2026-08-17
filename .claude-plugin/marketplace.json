@@ -35,10 +35,19 @@
       "keywords": ["orchestration", "conductor", "claudebox", "observability", "agentic"]
     },
     {
+      "name": "milestoned-plan-dag",
+      "source": { "source": "github", "repo": "kentra-io/milestoned-plan-dag" },
+      "skills": ["./skills/plan-author"],
+      "description": "Authoring skill (plan-author) for the milestoned-plan-dag primitive: the machine-first YAML plan format in which a plan is a DAG of verifiable milestones. Documents the full grammar — milestone identity, the depends-on DAG and its implicit-chain fallback, the mandatory check/criteria/paths contract, checkbox steps — and the validate -> resolve/render CLI workflow. The CLI installs separately: `brew install kentra-io/tap/milestoned-plan-dag`.",
+      "license": "MIT",
+      "category": "sdlc",
+      "keywords": ["plan", "dag", "milestones", "yaml", "planning", "sdd", "spec-driven"]
+    },
+    {
       "name": "kentra-skills",
       "source": { "source": "github", "repo": "kentra-io/kentra-skills" },
-      "skills": ["./skills/java-hexagonal", "./skills/subagent-workflow"],
-      "description": "Kentra skills: java-hexagonal (framework-neutral hexagonal / ports-and-adapters layering, ArchUnit shape enforcement, and a three-tier test strategy — unit / domain-with-fakes / Testcontainers) and kentra-workflow (an orchestrator/implementer/verifier subagent loop for executing a written implementation plan).",
+      "skills": ["./skills/java-hexagonal", "./skills/testcontainers-java", "./skills/subagent-workflow"],
+      "description": "Kentra skills: java-hexagonal (framework-neutral hexagonal / ports-and-adapters layering, ArchUnit shape enforcement, and a three-tier test strategy — unit / domain-with-fakes / Testcontainers), testcontainers-java (canonical Testcontainers-Java patterns for portable integration tests — singleton containers, Kafka advertised listeners, Docker environment resolution, Ryuk under socket proxies), and subagent-workflow (an orchestrator/implementer/verifier subagent loop for executing a written implementation plan).",
       "license": "MIT",
       "category": "architecture",
       "keywords": ["hexagonal", "ports-and-adapters", "archunit", "testcontainers", "jvm", "workflow", "subagent", "orchestration"]
