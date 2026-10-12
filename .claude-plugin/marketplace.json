@@ -17,28 +17,18 @@
       "keywords": ["adr", "governance", "constitution", "sdd", "spec-driven"]
     },
     {
-      "name": "spec-lifecycle",
-      "source": { "source": "github", "repo": "kentra-io/spec-lifecycle" },
-      "skills": ["./skills/lifecycle-init"],
-      "description": "Bootstrap skill (lifecycle-init) for the spec-lifecycle primitive: installs the CLI and scaffolds a project for the staged, human-gated, spec-driven issue lifecycle (refine → design → plan → archive, OpenSpec on-disk format). Per-stage skills are installed into the governed repo by `lifecycle init`, not bundled here.",
+      "name": "kentra-rpir",
+      "source": { "source": "github", "repo": "kentra-io/kentra-rpir" },
+      "description": "Runs one change through spec → plan → implement → review: interactive spec with background premise research, a milestoned-plan-dag plan an implementer follows without exploring, parallel milestones in git worktrees with a fresh verifier each, and a retro read from the session transcripts. Needs the milestoned-plan-dag CLI.",
       "license": "MIT",
       "category": "sdlc",
-      "keywords": ["sdd", "spec-driven", "openspec", "lifecycle", "gates", "planning"]
-    },
-    {
-      "name": "agent-orchestration-skills",
-      "source": { "source": "github", "repo": "kentra-io/agent-orchestration" },
-      "skills": ["./skills/orchestration-launch", "./skills/orchestration-monitor"],
-      "description": "Operator and consumer skills for the agent-orchestration module: launch/resume execute-change runs through the orchestrator daemon (orchestration-launch) and monitor live runs — status fold, classified death causes, dashboard/index surfaces (orchestration-monitor).",
-      "license": "MIT",
-      "category": "sdlc",
-      "keywords": ["orchestration", "conductor", "claudebox", "observability", "agentic"]
+      "keywords": ["rpi", "rpir", "spec", "plan", "implement", "review", "retro", "worktrees", "subagents"]
     },
     {
       "name": "milestoned-plan-dag",
       "source": { "source": "github", "repo": "kentra-io/milestoned-plan-dag" },
       "skills": ["./skills/plan-author"],
-      "description": "Authoring skill (plan-author) for the milestoned-plan-dag primitive: the machine-first YAML plan format in which a plan is a DAG of verifiable milestones. Documents the full grammar — milestone identity, the depends-on DAG and its implicit-chain fallback, the mandatory check/criteria/paths contract, checkbox steps — and the validate -> resolve/render CLI workflow. The CLI installs separately: `brew install kentra-io/tap/milestoned-plan-dag`.",
+      "description": "Authoring skill (plan-author) for the milestoned-plan-dag primitive: the machine-first YAML plan format in which a plan is a DAG of verifiable milestones. Documents the full grammar — milestone identity, the depends-on DAG and its implicit-chain fallback, the mandatory check/criteria/paths contract, plan- and milestone-level description and rules, multi-line checkbox steps — and the validate -> resolve/render CLI workflow. The CLI installs separately: `brew install kentra-io/tap/milestoned-plan-dag`.",
       "license": "MIT",
       "category": "sdlc",
       "keywords": ["plan", "dag", "milestones", "yaml", "planning", "sdd", "spec-driven"]
