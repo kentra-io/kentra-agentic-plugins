@@ -28,7 +28,7 @@
       "name": "milestoned-plan-dag",
       "source": { "source": "github", "repo": "kentra-io/milestoned-plan-dag" },
       "skills": ["./skills/plan-author"],
-      "description": "Authoring skill (plan-author) for the milestoned-plan-dag primitive: the machine-first YAML plan format in which a plan is a DAG of verifiable milestones. Documents the full grammar — milestone identity, the depends-on DAG and its implicit-chain fallback, the mandatory check/criteria/paths contract, plan- and milestone-level description and rules, multi-line checkbox steps — and the validate -> resolve/render CLI workflow. The CLI installs separately: `brew install kentra-io/tap/milestoned-plan-dag`.",
+      "description": "Authoring skill (plan-author) for the milestoned-plan-dag primitive: the machine-first YAML plan format in which a plan is a DAG of verifiable milestones. Documents the full grammar — milestone identity, the depends-on DAG of explicit edges, the mandatory check/criteria/paths contract, plan- and milestone-level description and rules, multi-line checkbox steps — and the validate -> resolve/render CLI workflow. The CLI installs separately: `brew install kentra-io/tap/milestoned-plan-dag`.",
       "license": "MIT",
       "category": "sdlc",
       "keywords": ["plan", "dag", "milestones", "yaml", "planning", "sdd", "spec-driven"]
