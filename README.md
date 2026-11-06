@@ -48,8 +48,8 @@ before pushing, register its working tree directly instead:
 | Plugin | Status |
 | --- | --- |
 | `adr-sourced-constitution` | Live (v0.2) — bootstrap skill `constitution-init` scaffolds a project's event-sourced ADR log → deterministic `constitution.md`. |
-| `kentra-rpir` | Live (v0.3) — spec → plan → implement → review for one change; parallel verified milestones in worktrees; transcript-based retros. Replaces `spec-lifecycle`. |
-| `milestoned-plan-dag` | Live (v0.2) — authoring skill `plan-author` for the machine-first YAML plan format (a DAG of verifiable milestones). |
+| `kentra-rpir` | Live (v0.6) — plan → implement → review for one change: spec and coarse plan in one session with a background research pool; Opus milestone leads with fresh implementers in worktrees, a fresh verifier per milestone; transcript-based retros. Replaces `spec-lifecycle`. |
+| `milestoned-plan-dag` | Live (v0.4) — authoring skill `plan-author` for the machine-first YAML plan format (a DAG of verifiable milestones, each a mergeable deliverable). |
 | `kentra-skills` | Live — `java-hexagonal` (framework-neutral hexagonal JVM architecture), `testcontainers-java` (portable Testcontainers-Java patterns), and `subagent-workflow` (orchestrator/implementer/verifier subagent loop). |
 
 ### Companion CLIs
