@@ -19,7 +19,7 @@
     {
       "name": "kentra-rpir",
       "source": { "source": "github", "repo": "kentra-io/kentra-rpir" },
-      "description": "Runs one change through plan → implement → review: one planning session writes the spec and a coarse milestoned-plan-dag plan, premises researched in the background by a session research pool (lookup, spike, researcher, advisor), one joint review of spec and plan, Opus milestone leads briefing fresh Sonnet implementers in parallel git worktrees, a fresh verifier per milestone, and a retro read from the session transcripts. Needs the milestoned-plan-dag CLI 0.4.0 or later.",
+      "description": "Runs one change through plan → implement → review: one planning session writes the spec and a coarse milestoned-plan-dag plan, premises researched in the background by a session research pool (lookup, spike, researcher, advisor), one joint review of spec and plan, Opus milestone leads briefing fresh Sonnet implementers in parallel git worktrees, a fresh verifier per milestone, a retro read from the session transcripts that feeds a registry of recurring failures, plans spanning several repositories, and an optional background audit. Needs the milestoned-plan-dag CLI 0.5.0 or later.",
       "license": "MIT",
       "category": "sdlc",
       "keywords": ["rpi", "rpir", "spec", "plan", "implement", "review", "research", "retro", "worktrees", "subagents"]
